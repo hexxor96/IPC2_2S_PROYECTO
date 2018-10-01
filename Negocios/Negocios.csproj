@@ -45,9 +45,15 @@
     <Compile Include="Acceso\Escuela\Edificio.cs" />
     <Compile Include="Acceso\Escuela\Espacio.cs" />
     <Compile Include="Acceso\Escuela\Insumo.cs" />
-    <Compile Include="Acceso\Escuela\Servicio\Actividad.cs" />
-    <Compile Include="Acceso\Escuela\Servicio\Prestamo.cs" />
-    <Compile Include="Acceso\Escuela\Servicio\Reservacion.cs" />
+    <Compile Include="Acceso\Escuela\Disponibilidad.cs" />
+    <Compile Include="Acceso\Escuela\Servicio\Incidente\Incidente.cs" />
+    <Compile Include="Acceso\Escuela\Servicio\Incidente\TipoDanno.cs" />
+    <Compile Include="Acceso\Escuela\Servicio\Reservacion\Actividad.cs" />
+    <Compile Include="Acceso\Escuela\Servicio\Prestamo\Prestamo.cs" />
+    <Compile Include="Acceso\Escuela\Servicio\Reservacion\Reservacion.cs" />
+    <Compile Include="Acceso\Escuela\Servicio\Reservacion\EstadoReservacion.cs" />
+    <Compile Include="Acceso\Escuela\Servicio\Reservacion\Periodicidad.cs" />
+    <Compile Include="Acceso\Escuela\Servicio\Reservacion\TipoActividad.cs" />
     <Compile Include="Acceso\Escuela\TipoInsumo.cs" />
     <Compile Include="Acceso\Rol\Administrador.cs" />
     <Compile Include="Acceso\Rol\Estudiante.cs" />
@@ -57,6 +63,5 @@
     <Compile Include="Acceso\Rol\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
