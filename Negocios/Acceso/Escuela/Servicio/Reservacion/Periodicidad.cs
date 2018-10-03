@@ -18,7 +18,7 @@ namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 			SqlConnection con = null;
 			SqlCommand command = null;
 
-			String insert = "INSERT INTO PERIODICIDADVALUES (@NOMBRE)";
+			String insert = "INSERT INTO PERIODICIDAD VALUES (@NOMBRE)";
 			try
 			{
 				using (con = new Conexion().Conectar())
@@ -107,7 +107,7 @@ namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 			//Conexion a BD
 			SqlConnection con = null;
 			SqlCommand command = null;
-			String insert = "UPDATE PERIODICIDADSET NOMBRE = @NOMBRE WHERE IDPERIODICIDAD = @ID";
+			String insert = "UPDATE PERIODICIDAD SET NOMBRE = @NOMBRE WHERE IDPERIODICIDAD = @ID";
 			try
 			{
 				using (con = new Conexion().Conectar())
@@ -150,7 +150,7 @@ namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 			//Conexion a BD
 			SqlConnection con = null;
 			SqlCommand command = null;
-			String delete = "DELETE PERIODICIDADWHERE IDPERIODICIDAD = @ID";
+			String delete = "DELETE PERIODICIDAD WHERE IDPERIODICIDAD = @ID";
 			try
 			{
 				using (con = new Conexion().Conectar())
