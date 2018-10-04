@@ -53,7 +53,7 @@ namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 							command.Parameters.Add(new SqlParameter("@PERIODO", SqlDbType.Int)).Value = identificador[aux++];
 							aux = 0;
 							command.Parameters.Add(new SqlParameter("@PREVIA", SqlDbType.DateTime)).Value = reservacion[aux++];
-							command.Parameters.Add(new SqlParameter("@NOMBRE", SqlDbType.)).Value = nombre ;
+							command.Parameters.Add(new SqlParameter("@NOMBRE", SqlDbType.VarChar)).Value = nombre ;
 							command.Parameters.Add(new SqlParameter("@DESCRIPCION", SqlDbType.Text)).Value = descripcion;
 							command.Parameters.Add(new SqlParameter("@FINAL", SqlDbType.DateTime)).Value = reservacion[aux++];
 							idReservacion = Convert.ToInt32(command.ExecuteScalar());
@@ -181,7 +181,7 @@ namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 			{
 				try
 				{
-					if (con != null) con.Close;
+					if (con != null) con.Close();
 				}
 				catch (SqlException ex)
 				{
@@ -228,7 +228,7 @@ namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 			{
 				try
 				{
-					if (con != null) con.Close;
+					if (con != null) con.Close();
 				}
 				catch (SqlException ex)
 				{
@@ -264,7 +264,7 @@ namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 				" PERIODICIDAD ON PERIODICIDAD.IDPERIODICIDAD = RESERVACION.IDPERIODICIDAD";
 			try
 			{
-				using (con = new Conexion().Conectar();)
+				using (con = new Conexion().Conectar())
 				{
 					con.Open();
 					using (command = new SqlCommand(select,con))
@@ -322,7 +322,7 @@ namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 				" WHERE SUPER.IDRESERVACION = @IDENTIFICADOR";
 			try
 			{
-				using (con = new Conexion().Conectar();)
+				using (con = new Conexion().Conectar())
 				{
 					con.Open();
 					using (command = new SqlCommand(select, con))
@@ -367,7 +367,7 @@ namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 				" WHERE RESERVACION.IDRESERVACION = @IDENTIFICADOR";
 			try
 			{
-				using (con = new Conexion().Conectar();)
+				using (con = new Conexion().Conectar())
 				{
 					con.Open();
 					using (command = new SqlCommand(select, con))
