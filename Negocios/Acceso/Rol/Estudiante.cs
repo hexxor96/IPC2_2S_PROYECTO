@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 
 namespace Negocios.Acceso.Estudiante
 {
+
 	class Estudiante
 	{
 		/// <summary>
@@ -50,7 +51,7 @@ namespace Negocios.Acceso.Estudiante
 					new Conexion().CrearError(ex);
 				}
 			}
-			return resultado
+			return resultado;
 		}
 		/// <summary>
 		/// Crea un registro en la entidad matricualción, validando así la matriculación del estudiante
