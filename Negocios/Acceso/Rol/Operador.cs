@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Negocios.Acceso.Operador
 {
-	class Operador
+	public class Operador
 	{
 	}
 }

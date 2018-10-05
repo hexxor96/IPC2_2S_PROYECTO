@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Negocios.Acceso.Escuela.Servicio.Prestamo
 {
-	class Prestamo
+	public class Prestamo
 	{
 	}
 }

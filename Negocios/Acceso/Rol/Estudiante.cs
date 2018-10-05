@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 namespace Negocios.Acceso.Estudiante
 {
 
-	class Estudiante
+	public class Estudiante
 	{
 		/// <summary>
 		/// Crea una registro en la entidad asistencia, validando así la asistencia del estudiante

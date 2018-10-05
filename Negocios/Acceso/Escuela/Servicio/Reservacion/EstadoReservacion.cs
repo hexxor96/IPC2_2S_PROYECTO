@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 {
-	class EstadoReservacion
+	public class EstadoReservacion
 	{
 		/// <summary>
 		/// Crea un nuevo estado de reservación

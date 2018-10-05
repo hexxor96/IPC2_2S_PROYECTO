@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace Negocios.Acceso.Usuario
 {
-	class Usuario
+	public class Usuario
     {
 		/// <summary>
 		/// Crea un nuevo usuario

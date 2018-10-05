@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 {
-	class TipoActividad
+	public class TipoActividad
 	{
 		/// <summary>
 		/// Crea un nuevo tipo de actividad

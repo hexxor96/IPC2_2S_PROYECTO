@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 {
-	class Periodicidad
+	public class Periodicidad
 	{
 		/// <summary>
 		/// Crea un nuevo periodicidad

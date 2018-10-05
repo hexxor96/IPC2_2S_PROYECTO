@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace Negocios.Acceso.Escuela
 {
-	class Edificio
+	public class Edificio
 	{
 		/// <summary>
 		/// Crea un nuevo edificio

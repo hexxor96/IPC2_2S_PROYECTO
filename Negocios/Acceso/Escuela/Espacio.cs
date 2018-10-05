@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace Negocios.Acceso.Escuela
 {
-	class Espacio
+	public class Espacio
 	{
 		public int Crear(int idEdificio, int noSalon, int capacidad, int idDisponibilidad)
 		{

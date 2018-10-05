@@ -8,7 +8,7 @@ namespace Negocios.Acceso.Administrador
 	/// <summary>
 	/// Contiene las funciones del administrador
 	/// </summary>
-	class Administrador
+	public class Administrador
 	{
 		/// <summary>
 		/// Carga datos de forma masiva desde una hoja de cálculo .xlsx

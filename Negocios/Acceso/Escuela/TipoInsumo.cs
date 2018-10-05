@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace Negocios.Acceso.Escuela
 {
-	class TipoInsumo
+	public class TipoInsumo
 	{
 		/// <summary>
 		/// Crea un nuevo tipo de insumo

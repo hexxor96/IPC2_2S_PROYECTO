@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 {
-	class Reservacion
+	public class Reservacion
 	{
 		/// <summary>
 		/// Crea una nueva reservación

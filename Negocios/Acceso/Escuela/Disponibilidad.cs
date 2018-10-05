@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace Negocios.Acceso.Escuela
 {
-	class Disponibilidad
+	public class Disponibilidad
 	{
 		/// <summary>
 		/// Crea un nuevo disponibilidad

@@ -3,7 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 namespace Negocios.Acceso.Escuela
 {
-	class Insumo
+	public class Insumo
 	{
 		public int Crear(String nombre, String descripcion, byte[] foto ,int tipoInsumo, int disponibilidad)
 		{

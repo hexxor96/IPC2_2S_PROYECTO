@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace Negocios.Acceso.Escuela.Servicio.Incidente
 {
-	class TipoDanno
+	public class TipoDanno
 	{
 		/// <summary>
 		/// Crea un nuevo tipo de daño

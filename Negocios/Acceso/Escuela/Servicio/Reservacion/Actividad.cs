@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace Negocios.Acceso.Escuela.Servicio.Reservacion
 {
-	class Actividad
+	public class Actividad
 	{
 		/// <summary>
 		/// Sube la presentación del catedrático

@@ -7,7 +7,7 @@ namespace Negocios.Acceso.Escuela.Servicio.Incidente
 	/// <summary>
 	/// Gestiona la vida de los incidentes
 	/// </summary>
-	class Incidente
+	public class Incidente
 	{
 		/**
 		 * Crear //Transaction

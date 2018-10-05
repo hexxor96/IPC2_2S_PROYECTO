@@ -4,7 +4,7 @@ using System.Data;
 
 namespace Negocios.Acceso.Instructor
 {
-	class Instructor
+	public class Instructor
 	{
 		/// <summary>
 		/// Obtiene todas las reservaciones que el instructor ha realizado
@@ -13,7 +13,7 @@ namespace Negocios.Acceso.Instructor
 		/// <returns></returns>
 		public DataTable ObtenerReservaciones(int idInstructor)
 		{
-			DataTable table;
+			DataTable table = null;
 			SqlConnection con = null;
 			SqlCommand command = null;
 			String select = "SELECT SUPER.IDRESERVACION, (SELECT USUARIO.NOMBRE FROM RESERVACION INNER JOIN USUARIO ON USUARIO.IDUSUARIO = SUPER.IDOPERADOR) AS OPERADOR," +
@@ -39,7 +39,7 @@ namespace Negocios.Acceso.Instructor
 					con.Open();
 					using (command = new SqlCommand(select,con))
 					{
-						command.Parameters.Add(new SqlParameter("@Instructor",SqlDbType.Int);).Value = idInstructor;
+						command.Parameters.Add(new SqlParameter("@Instructor",SqlDbType.Int)).Value = idInstructor;
 						using (SqlDataAdapter adapter = new SqlDataAdapter(command))
 						{
 							table = new DataTable();
