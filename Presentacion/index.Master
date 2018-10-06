@@ -25,18 +25,15 @@
 </head>
 <body>
 	<form id="Form" runat="server">
-		<div class="super_container">
+		<div class="super_container" style="background-color: rgb(234,116,20);">
 
 			<asp:ContentPlaceHolder runat="server" ID="Header" />
 			<asp:ContentPlaceHolder runat="server" ID="Menu" />
-			<!-- Home -->
-			<!-- Hero Slider -->
-			<div class="home">
-				<div class="hero_slide_background" style="background-image: url(images/slider_background.jpg)"></div>
-				<asp:ContentPlaceHolder runat="server" ID="Home" />
-			</div>
+			<asp:ContentPlaceHolder runat="server" ID="Home" />
+			<asp:ContentPlaceHolder runat="server" ID="Contenido" />
 
 		</div>
+		<asp:ContentPlaceHolder runat="server" ID="Footer" />
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="styles/bootstrap4/popper.js"></script>
 		<script src="styles/bootstrap4/bootstrap.min.js"></script>
