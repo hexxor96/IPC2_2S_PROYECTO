@@ -13,13 +13,13 @@ namespace Presentacion {
     public partial class index {
         
         /// <summary>
-        /// Control contentHeader.
+        /// Control Title.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder contentHeader;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Title;
         
         /// <summary>
         /// Control Form.
@@ -29,5 +29,32 @@ namespace Presentacion {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm Form;
+        
+        /// <summary>
+        /// Control Header.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Header;
+        
+        /// <summary>
+        /// Control Menu.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Menu;
+        
+        /// <summary>
+        /// Control Home.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Home;
     }
 }

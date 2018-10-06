@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dashboard.aspx" />
     <Content Include="images\author.jpg" />
     <Content Include="images\become.jpg" />
     <Content Include="images\blackboard.svg" />
@@ -120,7 +121,6 @@
     <Content Include="images\testimonials_background.jpg" />
     <Content Include="images\testimonials_background_2.jpg" />
     <Content Include="images\testimonials_user.jpg" />
-    <Content Include="iniciarsesion.aspx" />
     <Content Include="js\contact_custom.js" />
     <Content Include="js\courses_custom.js" />
     <Content Include="js\custom.js" />
@@ -129,6 +129,7 @@
     <Content Include="js\news_custom.js" />
     <Content Include="js\news_post_custom.js" />
     <Content Include="js\teachers_custom.js" />
+    <Content Include="operador\index.aspx" />
     <Content Include="plugins\easing\easing.js" />
     <Content Include="plugins\fontawesome-free-5.0.1\css\fontawesome-all.css" />
     <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.svg" />
@@ -148,7 +149,6 @@
     <Content Include="plugins\progressbar\progressbar.min.js" />
     <Content Include="plugins\scrollmagic\ScrollMagic.min.js" />
     <Content Include="plugins\scrollTo\jquery.scrollTo.min.js" />
-    <Content Include="registrarse.aspx" />
     <Content Include="styles\bootstrap4\bootstrap.min.css" />
     <Content Include="styles\bootstrap4\bootstrap.min.js" />
     <Content Include="styles\bootstrap4\popper.js" />
@@ -169,20 +169,15 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="administrador\index.Master.cs">
-      <DependentUpon>index.Master</DependentUpon>
+    <Compile Include="dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="administrador\index.Master.designer.cs">
-      <DependentUpon>index.Master</DependentUpon>
+    <Compile Include="dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
     </Compile>
-    <Compile Include="estudiante\index.Master.cs">
-      <DependentUpon>index.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="estudiante\index.Master.designer.cs">
-      <DependentUpon>index.Master</DependentUpon>
-    </Compile>
+    <Compile Include="Datos\Alerta.cs" />
+    <Compile Include="Datos\Componente.cs" />
     <Compile Include="index.Master.cs">
       <DependentUpon>index.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -190,42 +185,17 @@
     <Compile Include="index.Master.designer.cs">
       <DependentUpon>index.Master</DependentUpon>
     </Compile>
-    <Compile Include="iniciarsesion.aspx.cs">
-      <DependentUpon>iniciarsesion.aspx</DependentUpon>
+    <Compile Include="operador\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="iniciarsesion.aspx.designer.cs">
-      <DependentUpon>iniciarsesion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="instructor\index.Master.cs">
-      <DependentUpon>index.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="instructor\index.Master.designer.cs">
-      <DependentUpon>index.Master</DependentUpon>
-    </Compile>
-    <Compile Include="operador\index.Master.cs">
-      <DependentUpon>index.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="operador\index.Master.designer.cs">
-      <DependentUpon>index.Master</DependentUpon>
+    <Compile Include="operador\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="registrarse.aspx.cs">
-      <DependentUpon>registrarse.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="registrarse.aspx.designer.cs">
-      <DependentUpon>registrarse.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.Master" />
-    <Content Include="administrador\index.Master" />
-    <Content Include="estudiante\index.Master" />
-    <Content Include="instructor\index.Master" />
-    <Content Include="operador\index.Master" />
     <None Include="packages.config" />
     <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.eot" />
     <Content Include="plugins\fontawesome-free-5.0.1\webfonts\fa-brands-400.ttf" />
@@ -248,6 +218,17 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{c4c1dda7-8053-4ded-b9e2-f0cbc5882d0c}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="administrador\" />
+    <Folder Include="estudiante\" />
+    <Folder Include="instructor\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
