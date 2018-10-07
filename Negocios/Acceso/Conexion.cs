@@ -10,7 +10,7 @@ namespace Negocios.Acceso
 
 		public SqlConnection Conectar()
 		{
-			return connection = new SqlConnection(@"Data Source=DESKTOP-M0RM3OG\SQLEXPRESS;database=SISTEMAS;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+			return connection = new SqlConnection(@"Data Source=DESKTOP-M0RM3OG\SQLEXPRESS;database=IPC2SISTEMAS;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 		}
 		/// <summary>
 		/// Crea y despliega un mensaje de error en la consola
