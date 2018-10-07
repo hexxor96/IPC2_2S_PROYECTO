@@ -20,15 +20,13 @@ namespace Presentacion.Datos
 		public void MostrarAlerta(int tipoInsercion, String mensaje, PlaceHolder phContent)
 		{
 			StringBuilder stringBuilder = new StringBuilder();
-			stringBuilder.AppendFormat("<div class= \"alert {0} alert-dismissible fade\">",
+			stringBuilder.AppendFormat("<div class= \"alert {0} alert-dismissible\">",
 				tipoInsercion == 1 ? "alert-success" : tipoInsercion == 2 ? "alert-warning" : "alert-danger");
 			stringBuilder.AppendFormat("<span class=\"badge badge-pill {0} \">{1}</span>",
 				tipoInsercion == 1 ? "badge-success" : tipoInsercion == 2 ? "badge-warning" : "badge-danger",
 				tipoInsercion == 1 ? "Éxito" : tipoInsercion == 2 ? "Precaución" : "Error");
 			stringBuilder.AppendLine("  " + mensaje);
-			stringBuilder.AppendLine("<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">");
-			stringBuilder.AppendLine("<span aria-hidden=\"true\">&times;</span>");
-			stringBuilder.AppendLine("</button>");
+			stringBuilder.AppendLine("<a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>");
 			stringBuilder.AppendLine("</div>");
 			phContent.Controls.Add(new LiteralControl(stringBuilder.ToString()));
 		}
